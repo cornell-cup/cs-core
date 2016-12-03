@@ -1,0 +1,2 @@
+# Include dependencies that cannot be managed with submodules or maven here.
+# Please try to minimize these kinds of dependencies

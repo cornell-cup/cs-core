@@ -1,0 +1,18 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint-config-google",
+    "rules": {
+        "brace-style": ["error", "stroustrup"],
+        "indent": ["error", 4],
+        "object-curly-spacing": ["error", "always"],
+        "require-jsdoc": ["off"],
+        "valid-jsdoc": ["off"]
+    }
+}

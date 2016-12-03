@@ -63,7 +63,13 @@ TODO: Tutorial on making sure this happens. (git config --global user.name/user.
 
 ## Language-Specific Requirements
 
-We additionally have requirements specific to each repository. They will be tracked here as subfolders. At the current time, we have specific requirements for:
+We additionally have requirements specific to each repository. They are tracked in the language-specific folder of this repo. At the current time, we have specific requirements for:
 
 - Java
 - JavaScript
+
+## Tools
+
+While this is a work in progress, this repository also contains tools for all 
+CS computers to include. The .bashrc in this repo should be copied into every
+computer's bashrc and the tools folder should be linked.

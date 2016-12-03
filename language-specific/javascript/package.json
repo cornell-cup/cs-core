@@ -1,0 +1,27 @@
+{
+  "name": "javascript-demo",
+  "version": "1.0.0",
+  "description": "JavaScript demo project",
+  "main": "build",
+  "scripts": {
+    "all": "npm run lint && npm run build && npm run browser",
+    "browser": "browserify build/demo_browser.js -o build/browser.js",
+    "build": "node_modules/.bin/babel src --ignore node_modules --out-dir build",
+    "lint": "node node_modules/eslint/bin/eslint.js -c .eslintrc.json src/**/*.js || exit 0",
+    "demo": "node build/demo_node.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node_modules/.bin/babel src --ignore node_modules --out-dir build --watch"
+  },
+  "author": "Scott Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "browserify": "^13.1.0",
+    "eslint": "^3.8.0",
+    "eslint-config-google": "^0.7.0"
+  },
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
