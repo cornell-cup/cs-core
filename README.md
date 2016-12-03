@@ -72,4 +72,5 @@ We additionally have requirements specific to each repository. They are tracked 
 
 While this is a work in progress, this repository also contains tools for all 
 CS computers to include. The .bashrc in this repo should be copied into every
-computer's bashrc and the tools folder should be linked.
+computer's bashrc and the tools folder should be linked. Note from the bashrc,
+this repo must be cloned until the local home directory.
