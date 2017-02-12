@@ -67,7 +67,7 @@ develop --Create Branch-> feature --PR-> develop --Prepare For Release-> rc --Te
 ### CI
 TODO: In the future, we wish to set up a continuous integration server to ensure all code is tested and no changes cause issues. This is something a willing member can take up as a task.
 ### Issues
-While we are using Jira in order to track any tasks, issues may be used to report small bugs if it is not appropriate on Jira.
+While we are using Jira in order to track any tasks, GitHub Issues may be used to report small bugs if it is not appropriate on Jira.
 
 ### Identity
 All code pushed by you should be committed using your GitHub credentials in order to track code contributions and work.
