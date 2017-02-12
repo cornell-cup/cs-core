@@ -14,6 +14,8 @@ Every repository should have a README.md file in the top level. This readme shou
 
 1. A brief description of the purpose of the repository
 2. Clear, verifiable instructions on how to set up and run the project for the repository, if applicable.
+
+The README is not a substitute for Confluence documentation.
 ### Tagline
 Each repository has a tagline.  This is what you see when viewing all repositories on the cornell cup.  Taglines should serve as a brief but clear description of the repository.
 
