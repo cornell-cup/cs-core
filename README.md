@@ -14,6 +14,8 @@ Every repository should have a README.md file in the top level. This readme shou
 
 1. A brief description of the purpose of the repository
 2. Clear, verifiable instructions on how to set up and run the project for the repository, if applicable.
+
+The README is not a substitute for Confluence documentation.
 ### Tagline
 Each repository has a tagline.  This is what you see when viewing all repositories on the cornell cup.  Taglines should serve as a brief but clear description of the repository.
 
@@ -26,9 +28,20 @@ Every repository should have a .gitignore unless it is clearly not needed (for e
 All repositories which comply with the guidelines will be marked [clean] in the tagline.  If a [clean] repository no longer complies with the standard, the tag should be removed and a git issue should be raised if appropriate.
 
 ## Git Workflow
-This section is not necessarily required on every repository, though should be strongly considered.
 
 ### Branches
+
+When developing a new feature on a repo, whether or not you are using the full set of branching standards below, you should at least create a separate branch, work on that branch, and merge it back into the main branch when finished (ideally through a pull request).
+
+Creating a new branch is as simple as typing
+
+```
+  git checkout -b my_branch
+```
+
+#### Branch Workflow
+This section is not necessarily required on every repository, though should be strongly considered.
+
 In addition to other branches, repositories conforming to this standard will have a develop, rc, and a master branch.
 
 The master branch serves as the last stable release of the repository's code. This facilitates easily building the code in case a prototype is needed.
@@ -52,14 +65,21 @@ In summary, the workflow looks like this:
 
 develop --Create Branch-> feature --PR-> develop --Prepare For Release-> rc --Tested-> master
 ### CI
-TODO: In the future, we wish to set up a continuous integration server to ensure all code is tested and no changes cause issues.
+TODO: In the future, we wish to set up a continuous integration server to ensure all code is tested and no changes cause issues. This is something a willing member can take up as a task.
 ### Issues
-While we are using Jira in order to track any tasks, issues may be used to report small bugs if it is not appropriate on Jira.
+While we are using Jira in order to track any tasks, GitHub Issues may be used to report small bugs if it is not appropriate on Jira.
 
 ### Identity
-All code pushed by you should be pushed using your GitHub credentials in order to track code contributions and work. 
+All code pushed by you should be committed using your GitHub credentials in order to track code contributions and work.
 
-TODO: Tutorial on making sure this happens. (git config --global user.name/user.email)
+Ordinarily, you can set this using 
+
+```
+  git config --global user.name "Your Name"
+  git config --global user.email "YourNetID@Cornell.edu"
+```
+
+Most Cornell Cup computers include the script in this repository (cup-identify) for reminding you to do this.
 
 ## Language-Specific Requirements
 
